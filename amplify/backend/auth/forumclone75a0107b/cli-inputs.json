@@ -1,0 +1,46 @@
+{
+  "version": "1",
+  "cognitoConfig": {
+    "identityPoolName": "forumclone75a0107b_identitypool_75a0107b",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "forumc75a0107b",
+    "userPoolName": "forumclone75a0107b_userpool_75a0107b",
+    "autoVerifiedAttributes": [
+      "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+      "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+      "email"
+    ],
+    "aliasAttributes": [],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+      "email"
+    ],
+    "userpoolClientReadAttributes": [
+      "email"
+    ],
+    "userpoolClientLambdaRole": "forumc75a0107b_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "sharedId": "75a0107b",
+    "resourceName": "forumclone75a0107b",
+    "authSelections": "identityPoolAndUserPool",
+    "useDefault": "default",
+    "triggers": {},
+    "userPoolGroupList": [],
+    "serviceName": "Cognito",
+    "usernameCaseSensitive": false,
+    "useEnabledMfas": true
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-forumclone-dev-102511-authRole",
+      "UnauthRoleArn": "arn:aws:iam::967399476984:role/amplify-forumclone-dev-102511-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::967399476984:role/amplify-forumclone-dev-102511-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-forumclone-dev-102511-deployment",
+      "UnauthRoleName": "amplify-forumclone-dev-102511-unauthRole",
+      "StackName": "amplify-forumclone-dev-102511",
+      "StackId": "arn:aws:cloudformation:us-east-1:967399476984:stack/amplify-forumclone-dev-102511/b2d066f0-64f9-11ed-b2e0-0efef2cb81fd",
+      "AmplifyAppId": "d3ak9bs7cf5nnp"
+    },
+    "categories": {
+      "auth": {
+        "forumclone75a0107b": {}
+      }
+    }
+  }
+}
