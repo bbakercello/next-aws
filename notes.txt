@@ -1,0 +1,34 @@
+# Elastic Beanstalk
+
+## 1. Perform as a Service
+
+## 2. Allows quick deployment of your applications
+
+## 3. Reduces management complexity 
+
+## 4. Keeps control in your hands
+
+## Update as easily as deploy 
+
+* zip application 
+* start service go to dashboard and Beanstalk
+* create a new application 
+* enter app name 
+* description 
+* create environment 
+* web server environment
+
+## Create new environment 
+* any domain data 
+* description 
+* Base configuration 
+* Upload code (local file in zip format)
+
+## Configure more options
+* cost configuration (use default for your small app)
+
+## Create working environment 
+* dashboard tells you the URL for the application 
+
+
+# .NET on AWS
