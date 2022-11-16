@@ -10,6 +10,8 @@
 
 ## Update as easily as deploy 
 
+## utomatically handles capacity provisioning, load balancing, automatic scaling, and application health monitoring of compute instances running your .NET application
+
 * zip application 
 * start service go to dashboard and Beanstalk
 * create a new application 
@@ -32,3 +34,124 @@
 
 
 # .NET on AWS
+.NET Core is corss platform and open source for future implementations of .net
+
+# Compute Services 
+* more time for core services 
+
+## Instances 
+* compute optimized - built appropriate resources for gaming 
+* Elastic Beanstock or Amazon EC2 
+
+## Containers
+* Amazon ECS 
+* Amazon EKS 
+* running batch jobs, quickly scaling machine learning, migrating existing services into the cloud 
+
+## Serverless 
+* AWS Lambda 
+* AWS Fargate - deploy ECS and EKS containers 
+
+# Storage and database services 
+* Amazong S3 simple storage - durable object storage like media hosting media delivery 
+* Relational - AMAZON RDS - provisioning an dpatching, failure detection and repair, postgres, MYSQL or Amazon Aurora - ecommerce sites, ERP, CRM 
+* nosql - Ammazon DynamoDB - low latency web apps, gaming apps, ecommerce 
+
+# Identity Services 
+* AWS Identity and ACCESS management - create and manage AWS users and groups, define roles and permissions, roles can be applied to appications 
+* AWS Directory Service - signing into AWS, or single sign on, extend on premises active directory 
+* Amazon Cognito - sign in through other sites like google or facebook 
+
+# Monitoring and auditing services 
+* application performance details 
+* Amazon CloudWatch - gain system wide visability to automate actions and reolution for smoothness
+* AWS CloudTrail - keeps track of user information and action, command tools and other services 
+
+# Developer Tools 
+* AWS SDK for .NET - makes it as simple as calling a service 
+* AWS Toolkit for Visual Studio! and Visual Studio Code - Provides an explorer view of a number of AWS services and several easy to use wizards
+* AWS Toolkit for JetBrains Rider 
+* AWS Tools for PowerShell - powershell environment enables you to control AWS services from the command line
+* AWS Command Line Interface (CLI)
+* .NET Core CLI 
+* AWS Toolkit for Azure DevOps 
+* AWS CDK for .NET - enables you to define your cloud infrastructure as code
+
+## Functionality / Compute / Storage / Emerging Tech / Community of Customers and Partners / security / pace of innovation
+## Reliability, security and innovation you can depend on for your applications 
+
+# Accelerating Messaging Modernization with Amazon MQ 
+* Retail order procecing and fulfillment 
+* Media - social media video processing 
+* Financial services - trades and transactions (user auth and transactions)
+* Health care - patient registration and other departments, patietns tracked 
+* Publication companies - document 
+* Education - learning and engagement 
+* manufacturing - multi step prcoess 
+* government - citizen engagement 
+
+## Built for many uses to be highly tolerant and be scaled up 
+
+## Elimanate costly broker licenses, no longer self manage, config etc
+## Enable backup and disaster recovery 
+## Bariers - investments, public sloud risks, re-architecture effort
+
+# Cloud Native like Simple Q service or Amazon Simple Notification Service
+* Super simple and scalability while fully managed 
+
+## Most flexible and agile architecture, reliability, pay per use,  
+## fully managed on AWS - refactoring to cloud is time consuming and has risk (dependent systems)
+
+## Legacy is opposite at bottom left 
+# Lift and Shift to AWS (container)- lower risk, good first step, better availability, better reliabililty
+* can be difficult to manage and pay for licenses and support
+# leaves the middleware be 
+
+# Amazon MQ
+## best of both worlds - fully managed and featured - Apache ActiveMQ
+# migrate to cloud, ,easy to manage, highly available durable and scalable, secure
+
+## messaging talks between systems like fulfillment and ordering 
+## automates task, privsioin  updatesx maintence securtiy 
+## encripytino in transit, at rest, VPC enabled, 
+## integrated with cloud watch, monitor health, set alarms when something goes wrong 
+
+## Replatform: Replace with AmazonMQ - connect applications without rewriting exisitng code 
+* don't have to manage availability 
+* all systems must be migrated together
+
+Re-platform (hybrid)
+ - all apps remain interconnected - build a hybrid 
+ - some applications on premises 
+ - incrementally migrate to cloud 
+
+
+# AWS MQ Console HomePage 
+## Get Started 
+## Broker types - single instance - once vroker in one AZ with durability optimized or throughput optimized 
+## Active/standby broker - two brokers with durability optimized 
+
+* Enter broker name
+* mq.t2.micro is for testing 
+* username and password have to be the same 
+* Create Broker 
+
+* Broker now being created takes about 15 minutes 
+
+
+
+#Network of Brokers 
+* conduitSubscriptions  to true = messages split in half at each No, so tree is uneven 
+* conduitSubscriptions to false - messages are evenly split amongst receivers 
+
+# High availability - When you create an Active/Standby broker in Amazon MQ, you get 2 brokers with common shared storage, 
+where all messages are available when failover happens in one broker. 
+If you desire even higher availability, so that you have a broker available if two of your Amazon MQ brokers fail, then you can use Network of Brokers with a 3 node mesh. 
+In this case, the brokers do not share storage, but you have 3 connected brokers so at least one will be available if two others fail. 
+And all messages will be available when the brokers recover.
+* transportConnector
+updateClusterClients = true - This informs clients about new broker joining the network. 
+Application code then choose to connect to new broker. rebalanceClusterClients = true - 
+This automatically disconnects the client connection and reconnects the client to an active broker.
+
+
