@@ -144,6 +144,23 @@ Re-platform (hybrid)
 * conduitSubscriptions  to true = messages split in half at each No, so tree is uneven 
 * conduitSubscriptions to false - messages are evenly split amongst receivers 
 
+## Message Queue 
+## One Sender, One Receiver 
+* one to one relationship between a sender and receiver for each published message 
+* point to point messaging - each message is consumed by one receiver 
+
+## One Sender, Two Receivers 
+* one message goes to one receiver at a time 
+
+## Two Senders, Two Receivers 
+* if one receiver is off, the other receiver receives messages from both senders
+
+## Message Topics 
+* message published onto that topic will be sent to all subscribers of that topic 
+
+
+## One Publisher, One Subscriber 
+
 # High availability - When you create an Active/Standby broker in Amazon MQ, you get 2 brokers with common shared storage, 
 where all messages are available when failover happens in one broker. 
 If you desire even higher availability, so that you have a broker available if two of your Amazon MQ brokers fail, then you can use Network of Brokers with a 3 node mesh. 
